@@ -4,7 +4,7 @@ pragma abicoder v2;
 
 import { ERC20 } from "./solmate/ERC20.sol";
 
-contract Afonso is ERC20 {
+contract Token is ERC20 {
     constructor() ERC20("Afonso", "AFD", 18) {
         _mint(msg.sender, 1000000 * 1000000000000000000);
     }

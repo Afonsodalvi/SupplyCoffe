@@ -3,14 +3,18 @@
 /* tslint:disable */
 
 /* eslint-disable */
-import type * as tokenSol from "./Token.sol";
-import type * as solmate from "./solmate";
+import type * as openzeppelin from "./@openzeppelin";
+import type * as contracts from "./contracts";
 
-export type { tokenSol };
+export type { openzeppelin };
 
-export type { solmate };
+export type { contracts };
 export * as factories from "./factories";
-export type { ERC20 } from "./solmate/ERC20";
-export { ERC20__factory } from "./factories/solmate/ERC20__factory";
-export type { Afonso } from "./Token.sol/Afonso";
-export { Afonso__factory } from "./factories/Token.sol/Afonso__factory";
+export type { IERC20 } from "./@openzeppelin/contracts/token/ERC20/IERC20";
+export { IERC20__factory } from "./factories/@openzeppelin/contracts/token/ERC20/IERC20__factory";
+export type { ERC20 } from "./contracts/solmate/ERC20";
+export { ERC20__factory } from "./factories/contracts/solmate/ERC20__factory";
+export type { SupplyChain } from "./contracts/SupplyCoffe.sol/SupplyChain";
+export { SupplyChain__factory } from "./factories/contracts/SupplyCoffe.sol/SupplyChain__factory";
+export type { Token } from "./contracts/Token";
+export { Token__factory } from "./factories/contracts/Token__factory";

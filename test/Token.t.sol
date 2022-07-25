@@ -5,15 +5,14 @@ import "forge-std/Test.sol";
 
 import "../contracts/Token.sol";
 
-
 contract TokenTest is Test {
-    Afonso t;
+    Token t;
 
     function setUp() public {
-        t = new Afonso();
+        t = new Token();
     }
 
     function testName() public {
-        assertEq(t.name(), "Afonso");
+        assertEq(t.name(), "Token");
     }
 }
